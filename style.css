@@ -1,1 +1,74 @@
-/* Add styles here */
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    color: #005A9C;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Indicator Card Styles */
+indicator-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+indicator-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header .icon {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #005A9C;
+}
+
+.card-header .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #005A9C;
+}
+
+.card-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #666;
+}
